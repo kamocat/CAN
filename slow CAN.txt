@@ -1,0 +1,11 @@
+I'm using several MDL-BDC24's on a CAN bus, with one of them acting as an RS232 to CAN bridge.  I have this connected to a NI cRIO with a driver provided by a third-party.
+
+I've been having trouble with the effective communication speed being far less than what I expected.  I know the CAN is 1Mb/s and the RS232 is 112kb/s.  I'll use the configuration "encoder lines" as an example.  For me, the command takes around 15 miliseconds.
+
+I'm a little fuzzy on what exactly is sent through RS232, but I'll assume it's the entire CAN message, which totals about 8 bytes without the data field.  In this case we have 4 bytes of data for the number of lines on the encoder.  That's about 120 bits when you account for bit-stuffing.
+
+120b / 112kb/s is about 1 milisecond.
+
+120b / 1Mb/s is about 0.1 miliseconds.
+
+Thus, I have a theoretical time of 1.1 miliseconds to send this command to the MDL-BDC24, less than a tenth of what my actual time is.
