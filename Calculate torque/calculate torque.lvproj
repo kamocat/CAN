@@ -322,7 +322,7 @@ KeepAliveTimeout 60
 		<Property Name="TargetOSID" Type="Str">VxWorks-PPC603</Property>
 		<Item Name="calculate torque.vi" Type="VI" URL="../calculate torque.vi"/>
 		<Item Name="test coeffecient calculation.vi" Type="VI" URL="../tests/test coeffecient calculation.vi"/>
-		<Item Name="compare to volts.vi" Type="VI" URL="../tests/compare to volts.vi"/>
+		<Item Name="find current ledge.vi" Type="VI" URL="../tests/find current ledge.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="WPI_DriverStationStart Communication.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationStart Communication.vi"/>
@@ -532,6 +532,7 @@ KeepAliveTimeout 60
 				<Item Name="WPI_WatchdogGetStatus.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Watchdog/WPI_WatchdogGetStatus.vi"/>
 				<Item Name="FPGA_WatchDogReadStatus.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/WatchDog/FPGA_WatchDogReadStatus.vi"/>
 				<Item Name="FPGA_WatchdogDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/WatchDog/FPGA_WatchdogDevRef.ctl"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 			</Item>
 			<Item Name="DriverStation Mod.lvlib" Type="Library" URL="../../../../My Documents/LabVIEW Data/DS Reliability/DriverStation/DriverStation Mod.lvlib"/>
 			<Item Name="NiRioSrv.dll" Type="Document" URL="NiRioSrv.dll">
@@ -546,6 +547,11 @@ KeepAliveTimeout 60
 			<Item Name="calibrate.vi" Type="VI" URL="../subVIs/calibrate.vi"/>
 			<Item Name="test.vi" Type="VI" URL="../subVIs/test.vi"/>
 			<Item Name="calculate torque from coeffecients.vi" Type="VI" URL="../subVIs/calculate torque from coeffecients.vi"/>
+			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
+			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
+			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../Program Files/National Instruments/LabVIEW 8.6/resource/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
