@@ -323,6 +323,7 @@ KeepAliveTimeout 60
 		<Item Name="calculate torque.vi" Type="VI" URL="../calculate torque.vi"/>
 		<Item Name="test coeffecient calculation.vi" Type="VI" URL="../tests/test coeffecient calculation.vi"/>
 		<Item Name="find current ledge.vi" Type="VI" URL="../tests/find current ledge.vi"/>
+		<Item Name="compare to volts.vi" Type="VI" URL="../tests/compare to volts.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="WPI_DriverStationStart Communication.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationStart Communication.vi"/>
