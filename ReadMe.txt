@@ -14,5 +14,4 @@ kamocat@gmail.com
 
 #####################################################
 Items to update:
-test system check
-System Check/
+System Check/  (troubleshooting not yet implemented)
