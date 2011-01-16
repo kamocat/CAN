@@ -10,3 +10,26 @@ Everything in this repository is in the public domain.  If you like it, tell peo
 Email me if you have any questions:
 Marshal Horn
 kamocat@gmail.com
+
+
+#####################################################
+Items to update:
+Assign device number
+Config Jag
+test configuration reset
+test system check
+System Check/
+
+Items to delete:
+CAN Diagnostics
+CAN reliability updates.txt
+Error test
+EZ speed
+filter with boolean array CAN device numbers
+loop config
+message timing
+position and speed
+queue CAN status log
+serial test
+synchro test
+test changes
