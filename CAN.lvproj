@@ -48,43 +48,37 @@
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Property Name="TargetOSID" Type="Str">VxWorks-PPC603</Property>
-		<Item Name="CAN diagnostics" Type="Folder">
-			<Item Name="filter with boolean array CAN device numbers.vi" Type="VI" URL="../filter with boolean array CAN device numbers.vi"/>
-			<Item Name="queue CAN status log.vi" Type="VI" URL="../queue CAN status log.vi"/>
-			<Item Name="log CAN status.vi" Type="VI" URL="../log CAN status.vi"/>
+		<Item Name="Reconfiguration" Type="Folder">
+			<Item Name="CAN configuration registry.vi" Type="VI" URL="../Reconfiguration/CAN configuration registry.vi"/>
+			<Item Name="configuration data.ctl" Type="VI" URL="../Reconfiguration/configuration data.ctl"/>
+			<Item Name="configuration options.ctl" Type="VI" URL="../Reconfiguration/configuration options.ctl"/>
+			<Item Name="configure.vi" Type="VI" URL="../Reconfiguration/configure.vi"/>
+			<Item Name="diff configuration.vi" Type="VI" URL="../Reconfiguration/diff configuration.vi"/>
+			<Item Name="merge configuration.vi" Type="VI" URL="../Reconfiguration/merge configuration.vi"/>
+			<Item Name="new CAN configuration.vi" Type="VI" URL="../Reconfiguration/new CAN configuration.vi"/>
+			<Item Name="reconfigure.vi" Type="VI" URL="../Reconfiguration/reconfigure.vi"/>
+			<Item Name="reset CAN Jag from power loss.vi" Type="VI" URL="../Reconfiguration/reset CAN Jag from power loss.vi"/>
+			<Item Name="update CAN configuration.vi" Type="VI" URL="../Reconfiguration/update CAN configuration.vi"/>
 		</Item>
 		<Item Name="parallel" Type="Folder" URL="../parallel">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="position and speed.vi" Type="VI" URL="../position and speed.vi"/>
-		<Item Name="can diagnostics.vi" Type="VI" URL="../can diagnostics.vi"/>
-		<Item Name="syncho test.vi" Type="VI" URL="../syncho test.vi"/>
-		<Item Name="serial test.vi" Type="VI" URL="../serial test.vi"/>
 		<Item Name="Assign device number.vi" Type="VI" URL="../Assign device number.vi"/>
 		<Item Name="enumerate.vi" Type="VI" URL="../enumerate.vi"/>
 		<Item Name="run motors.vi" Type="VI" URL="../run motors.vi"/>
 		<Item Name="config Jag.vi" Type="VI" URL="../config Jag.vi"/>
 		<Item Name="config action.ctl" Type="VI" URL="../config action.ctl"/>
-		<Item Name="loop config.vi" Type="VI" URL="../loop config.vi"/>
-		<Item Name="test configuration reset.vi" Type="VI" URL="../test configuration reset.vi"/>
-		<Item Name="message timing.vi" Type="VI" URL="../message timing.vi"/>
 		<Item Name="EZ speed 2.vi" Type="VI" URL="../EZ speed 2.vi"/>
-		<Item Name="EZ speed.vi" Type="VI" URL="../EZ speed.vi"/>
 		<Item Name="test system check.vi" Type="VI" URL="../test system check.vi"/>
-		<Item Name="error test.vi" Type="VI" URL="../error test.vi"/>
-		<Item Name="test changes.vi" Type="VI" URL="../test changes.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="CAN Send.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Send.vi"/>
 				<Item Name="CAN System Message IDs.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN System Message IDs.ctl"/>
-				<Item Name="CAN Receive.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Receive.vi"/>
 				<Item Name="CAN Enumerate.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/CAN Enumerate.vi"/>
 				<Item Name="CAN Jaguar Get Version.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Get Version.vi"/>
 				<Item Name="CAN Jaguar Get Transaction.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Get Transaction.vi"/>
 				<Item Name="CAN Jaguar Ref.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Ref.ctl"/>
-				<Item Name="CAN Update Message IDs.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Update Message IDs.ctl"/>
 				<Item Name="CAN Jaguar Set Transaction.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Set Transaction.vi"/>
-				<Item Name="CAN Jaguar Clear Ack.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Clear Ack.vi"/>
 				<Item Name="CAN Motor Message IDs.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Motor Message IDs.ctl"/>
 				<Item Name="Elapsed Times.vi" Type="VI" URL="/&lt;userlib&gt;/Elapsed Times.vi"/>
 				<Item Name="CAN Jaguar Get Status.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/CAN Jaguar Get Status.vi"/>
@@ -93,23 +87,10 @@
 				<Item Name="CAN Jaguar Position Reference.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Position Reference.ctl"/>
 				<Item Name="CAN Jaguar Limit Mode.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Limit Mode.ctl"/>
 				<Item Name="CAN Jaguar Brake Coast Mode.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Brake Coast Mode.ctl"/>
-				<Item Name="store Jaguar outputs.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reenable/store Jaguar outputs.vi"/>
 				<Item Name="config jags.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reconfiguration/config jags.vi"/>
-				<Item Name="diff configuration.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reconfiguration/diff configuration.vi"/>
-				<Item Name="configuration data.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reconfiguration/configuration data.ctl"/>
-				<Item Name="merge configuration.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reconfiguration/merge configuration.vi"/>
-				<Item Name="items to config.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reconfiguration/items to config.ctl"/>
-				<Item Name="configure.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reconfiguration/configure.vi"/>
-				<Item Name="CAN Jaguar RefNum Registry Set.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/CAN Jaguar RefNum Registry Set.vi"/>
-				<Item Name="CAN Jaguar GetSetRefNum.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar GetSetRefNum.vi"/>
-				<Item Name="CAN Jaguar - RobotDriveDevRef.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - RobotDrive/SubVIs/CAN Jaguar - RobotDriveDevRef.ctl"/>
-				<Item Name="Reconfigure Jaguars.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reconfiguration/Reconfigure Jaguars.vi"/>
-				<Item Name="reenable Jaguars.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Reenable/reenable Jaguars.vi"/>
-				<Item Name="CAN Token Message IDs.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Token Message IDs.ctl"/>
 				<Item Name="CAN Jaguar Speed Reference.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Speed Reference.ctl"/>
 				<Item Name="CAN Jaguar Open.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Control/CAN Jaguar Open.vi"/>
 				<Item Name="CAN Jaguar Set Speed Reference.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Control/CAN Jaguar Set Speed Reference.vi"/>
-				<Item Name="CAN Jaguar Enable Control.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Control/CAN Jaguar Enable Control.vi"/>
 				<Item Name="CAN Jaguar Config Encoder Codes Per Rev.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Config/CAN Jaguar Config Encoder Codes Per Rev.vi"/>
 				<Item Name="CAN Jaguar Set PID.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Config/CAN Jaguar Set PID.vi"/>
 				<Item Name="CAN Jaguar Set Output.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Control/CAN Jaguar Set Output.vi"/>
@@ -119,38 +100,16 @@
 				<Item Name="CAN Jaguar Config Potentiometer Turns.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Config/CAN Jaguar Config Potentiometer Turns.vi"/>
 				<Item Name="CAN Jaguar Config Limits.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Config/CAN Jaguar Config Limits.vi"/>
 				<Item Name="CAN Jaguar Config Brake Coast.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Config/CAN Jaguar Config Brake Coast.vi"/>
-				<Item Name="CAN Jaguar Get Output.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Control/CAN Jaguar Get Output.vi"/>
 				<Item Name="CAN Jaguar Control Mode.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Jaguar Control Mode.ctl"/>
-				<Item Name="Power status.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Power status.vi"/>
 				<Item Name="CAN Jaguar - Open4Motor.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - RobotDrive/CAN Jaguar - Open4Motor.vi"/>
-				<Item Name="CAN Jaguar Close.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Control/CAN Jaguar Close.vi"/>
 				<Item Name="CAN system check.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/CAN system check.vi"/>
-				<Item Name="test motor.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/test motor.vi"/>
-				<Item Name="test motion.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/test motion.vi"/>
-				<Item Name="format diagnostics message.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/format diagnostics message.vi"/>
-				<Item Name="CAN Jaguar Get PID.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Config/CAN Jaguar Get PID.vi"/>
-				<Item Name="get all info.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/get all info.vi"/>
-				<Item Name="get text configuration.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/get text configuration.vi"/>
-				<Item Name="get actual configuration.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/get actual configuration.vi"/>
-				<Item Name="get text status.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/get text status.vi"/>
-				<Item Name="store Jaguar outputs.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/Control/store Jaguar outputs.vi"/>
-				<Item Name="place element in order.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/place element in order.vi"/>
-				<Item Name="deduce instantaneous Jaguar state.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/deduce instantaneous Jaguar state.vi"/>
-				<Item Name="instantaneous state.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/instantaneous state.ctl"/>
-				<Item Name="stop motion.vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/System check/stop motion.vi"/>
-				<Item Name="CAN Jaguar Get Transaction (ignore error).vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Error handler/CAN Jaguar Get Transaction (ignore error).vi"/>
-				<Item Name="CAN Jaguar Set Transaction (ignore error).vi" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/Error handler/CAN Jaguar Set Transaction (ignore error).vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="DriverStation.lvlib" Type="Library" URL="/&lt;vilib&gt;/Robotics Library/WPI/DriverStation/DriverStation.lvlib"/>
-				<Item Name="StatusErrorCache.ctl" Type="VI" URL="/&lt;vilib&gt;/Robotics Library/WPI/DriverStation/StatusErrorCache.ctl"/>
 				<Item Name="Merge Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Merge Errors.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Watchdog.lvlib" Type="Library" URL="/&lt;vilib&gt;/Robotics Library/WPI/WatchDog/Watchdog.lvlib"/>
-				<Item Name="SerialPort.lvlib" Type="Library" URL="/&lt;vilib&gt;/Robotics Library/WPI/SerialPort/SerialPort.lvlib"/>
 				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
 				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
@@ -160,7 +119,6 @@
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
 				<Item Name="Release Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore.vi"/>
 				<Item Name="Not A Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Not A Semaphore.vi"/>
-				<Item Name="DriverStationLCD.lvlib" Type="Library" URL="/&lt;vilib&gt;/Robotics Library/WPI/DriverStation/DriverStationLCD/DriverStationLCD.lvlib"/>
 				<Item Name="WPI_MotorControlOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlOpen.vi"/>
 				<Item Name="WPI_MotorControlOpen Jaguar.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlOpen Jaguar.vi"/>
 				<Item Name="WPI_MotorControlOpen&amp;ConfigurePWM.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlOpen&amp;ConfigurePWM.vi"/>
@@ -402,7 +360,6 @@
 				<Item Name="Parse Stored String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/Parse Stored String.vi"/>
 				<Item Name="Get Next Character.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/Get Next Character.vi"/>
 				<Item Name="Read Key (U32).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/Read Key (U32).vi"/>
-				<Item Name="WPI_CANJaguar_GetMode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_GetMode.vi"/>
 				<Item Name="Release Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore Reference.vi"/>
 				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
 				<Item Name="WPI_CANJaguar_SetSpeedReference.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_SetSpeedReference.vi"/>
@@ -416,18 +373,21 @@
 				<Item Name="WPI_DigitalModuleGetPWM.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalModule/WPI_DigitalModuleGetPWM.vi"/>
 				<Item Name="FPGA_DIOReadPWMValue.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/DIO/FPGA_DIOReadPWMValue.vi"/>
 				<Item Name="WPI_MotorControlScaleFromPWM.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlScaleFromPWM.vi"/>
-				<Item Name="WPI_DriverStationLCDLCDLine.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/DriverStationLCD/WPI_DriverStationLCDLCDLine.ctl"/>
 				<Item Name="WPI_DriverStationStop Communication.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationStop Communication.vi"/>
-				<Item Name="ERRGetRefNum.vi" Type="VI" URL="/&lt;vilib&gt;/Robotics Library/WPI/Utilities/ERRGetRefNum.vi"/>
 				<Item Name="WPI_CANJaguar_SetPID.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_SetPID.vi"/>
 				<Item Name="WPI_CANJaguar_ConfigLimits.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_ConfigLimits.vi"/>
 				<Item Name="WPI_CANJaguar_LimitMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/SubVIs/WPI_CANJaguar_LimitMode.ctl"/>
 				<Item Name="WPI_CANJaguar_ConfigFaultTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_ConfigFaultTime.vi"/>
 				<Item Name="WPI_MotorControlClose.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlClose.vi"/>
 				<Item Name="WPI_PWMClose.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/PWM/WPI_PWMClose.vi"/>
-				<Item Name="NI_FPGA_Interface.lvlib" Type="Library" URL="/&lt;vilib&gt;/Robotics Library/NIFPGAInterface/NI_FPGA_Interface.lvlib"/>
+				<Item Name="WPI_CANJaguar_ConfigPotentiometerTurns.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_ConfigPotentiometerTurns.vi"/>
+				<Item Name="WPI_CANJaguar_ConfigMaxOutputVoltage.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_ConfigMaxOutputVoltage.vi"/>
+				<Item Name="WPI_CANJaguar_SetVoltageRampRate.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_SetVoltageRampRate.vi"/>
+				<Item Name="WPI_CANJaguar_ConfigBrakeCoast.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/Configuration/WPI_CANJaguar_ConfigBrakeCoast.vi"/>
+				<Item Name="WPI_CANJaguar_BrakeCoastMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/SubVIs/WPI_CANJaguar_BrakeCoastMode.ctl"/>
+				<Item Name="WPI_CAN_Receive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/WPI_CAN_Receive.vi"/>
+				<Item Name="WPI_WatchdogSetEnabled.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Watchdog/WPI_WatchdogSetEnabled.vi"/>
 			</Item>
-			<Item Name="CAN Jaguar Set Output with synchro.vi" Type="VI" URL="../Shortcut to CANJaguar.lnk/CAN Jaguar - MotorControl/Control/CAN Jaguar Set Output with synchro.vi"/>
 			<Item Name="NiRioSrv.dll" Type="Document" URL="NiRioSrv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -493,7 +453,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{9C17772F-3896-4C07-AC2E-AA17F77E77BD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/NeverWireLive/can diagnostics.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -548,7 +508,6 @@
 		<Item Name="view3 parallel vbus log.vi" Type="VI" URL="../parallel/analyze/view3 parallel vbus log.vi"/>
 		<Item Name="ms wait.vi" Type="VI" URL="../parallel/ms wait.vi"/>
 		<Item Name="comm effectiveness.vi" Type="VI" URL="../parallel/analyze/comm effectiveness.vi"/>
-		<Item Name="summarize.vi" Type="VI" URL="../parallel/analyze/CAN parallel logs/B/summarize.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="CAN Motor Message IDs.ctl" Type="VI" URL="/&lt;userlib&gt;/CANJaguar/CAN Jaguar - MotorControl/SubVIs/CAN Motor Message IDs.ctl"/>
